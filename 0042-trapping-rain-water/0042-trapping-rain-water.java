@@ -18,8 +18,7 @@ class Solution {
 
         int trappedRain = 0;
         for (int i = 0; i < n; i++) {
-            // finding water level
-            
+            // finding water level for area            
             int waterLevel = Math.min(leftMax[i], rightMax[i]);
             trappedRain += waterLevel - height[i];
         }
