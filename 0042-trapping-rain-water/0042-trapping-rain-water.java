@@ -11,6 +11,7 @@ class Solution {
 
         int rightMax[] = new int[n];
         rightMax[n - 1] = height[n - 1];
+        //finding right heighest peak point
         for (int i = n - 2; i >= 0; i--) {
             rightMax[i] = Math.max(rightMax[i + 1], height[i]);
         }
